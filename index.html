@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+</head>
+<body>
+      <div class="container">
+          <h2>Personal Todo List</h2>
+          <div class="box-head">
+            <input id="input" placeholder="What do you need to do today?" />
+            <button class="btn" onclick="addList()">Add</button>
+          </div>
+          <div class="task-count">
+            <span id="done">0</span> Done Task(s)
+            <span id="not-done">0</span> Not Done Task(s)
+            <span id="total">0</span> Total List(s)
+        </div>
+        <div id="err"></div>
+          <ul id="list"></ul>
+          <button class="btn bring" onclick="bringBack()">Bring tast deleted task</button>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
